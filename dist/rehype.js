@@ -4,7 +4,7 @@
  *   rehypePlugins: [[rehypeHubLinks, { site: 'stigviewer' }]]
  */
 import { visit } from 'unist-util-visit';
-import { PROTECTED_TAGS, segmentText } from './core';
+import { PROTECTED_TAGS, segmentText } from './core.js';
 export function rehypeHubLinks(opts) {
     return (tree) => {
         const linked = new Set();

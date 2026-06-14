@@ -3,7 +3,7 @@
  * run of text into a sequence of plain-text and link segments, honoring the
  * "first occurrence per term, per document" rule via a shared `linked` set.
  */
-import { HUB_LINKS, hrefFor, isExternal } from './map';
+import { HUB_LINKS, hrefFor, isExternal } from './map.js';
 /** Elements/contexts we never link inside. */
 export const PROTECTED_TAGS = new Set([
     'a',

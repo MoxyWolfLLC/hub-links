@@ -4,8 +4,8 @@
  *   rehypePlugins: [[rehypeHubLinks, { site: 'stigviewer' }]]
  */
 import { visit } from 'unist-util-visit'
-import { PROTECTED_TAGS, segmentText } from './core'
-import type { Site, HubLink } from './map'
+import { PROTECTED_TAGS, segmentText } from './core.js'
+import type { Site, HubLink } from './map.js'
 
 export function rehypeHubLinks(opts: { site: Site }) {
   return (tree: any) => {

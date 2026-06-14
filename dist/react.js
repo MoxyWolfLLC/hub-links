@@ -10,7 +10,7 @@ import { jsx as _jsx, Fragment as _Fragment } from "react/jsx-runtime";
  */
 import * as React from 'react';
 import parse from 'html-react-parser';
-import { PROTECTED_TAGS, segmentText } from './core';
+import { PROTECTED_TAGS, segmentText } from './core.js';
 export function renderHubContent(html, opts) {
     if (!html)
         return null;

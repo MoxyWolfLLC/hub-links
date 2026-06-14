@@ -6,8 +6,8 @@
  *   import { linkifyHtml } from '@moxywolf/hub-links/html'
  *   const html = linkifyHtml(marked(md), { site: 'moxywolf' })
  */
-import { PROTECTED_TAGS, segmentText, type Segment } from './core'
-import type { Site, HubLink } from './map'
+import { PROTECTED_TAGS, segmentText, type Segment } from './core.js'
+import type { Site, HubLink } from './map.js'
 
 const TAG = /<\/?([a-zA-Z][a-zA-Z0-9]*)\b[^>]*>/g
 

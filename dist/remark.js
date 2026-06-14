@@ -5,7 +5,7 @@
  *   .use(remarkHubLinks, { site: 'grcschema' })
  */
 import { visit } from 'unist-util-visit';
-import { segmentText } from './core';
+import { segmentText } from './core.js';
 // In MDAST, headings/links own their text directly; inline/block code carry
 // their value on the node (no text children), so they're skipped implicitly.
 const SKIP_PARENTS = new Set(['heading', 'link']);

@@ -8,7 +8,7 @@
  * Pass `linkComponent` (e.g. next/link) to render framework links.
  */
 import * as React from 'react';
-import type { Site } from './map';
+import type { Site } from './map.js';
 type LinkProps = {
     href: string;
     rel?: string;

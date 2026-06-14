@@ -12,8 +12,8 @@ import parse, {
   type DOMNode,
   type HTMLReactParserOptions,
 } from 'html-react-parser'
-import { PROTECTED_TAGS, segmentText } from './core'
-import type { Site, HubLink } from './map'
+import { PROTECTED_TAGS, segmentText } from './core.js'
+import type { Site, HubLink } from './map.js'
 
 type LinkProps = { href: string; rel?: string; children: React.ReactNode }
 

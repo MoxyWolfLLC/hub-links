@@ -6,7 +6,7 @@
  *   import { linkifyHtml } from '@moxywolf/hub-links/html'
  *   const html = linkifyHtml(marked(md), { site: 'moxywolf' })
  */
-import { PROTECTED_TAGS, segmentText } from './core';
+import { PROTECTED_TAGS, segmentText } from './core.js';
 const TAG = /<\/?([a-zA-Z][a-zA-Z0-9]*)\b[^>]*>/g;
 function escapeAttr(s) {
     return s.replace(/&/g, '&amp;').replace(/"/g, '&quot;');

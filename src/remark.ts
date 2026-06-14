@@ -5,8 +5,8 @@
  *   .use(remarkHubLinks, { site: 'grcschema' })
  */
 import { visit } from 'unist-util-visit'
-import { segmentText } from './core'
-import type { Site, HubLink } from './map'
+import { segmentText } from './core.js'
+import type { Site, HubLink } from './map.js'
 
 // In MDAST, headings/links own their text directly; inline/block code carry
 // their value on the node (no text children), so they're skipped implicitly.

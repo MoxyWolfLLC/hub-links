@@ -15,5 +15,5 @@ export {
   isExternal,
   type Site,
   type HubLink,
-} from './map'
-export { PROTECTED_TAGS, segmentText, type Segment } from './core'
+} from './map.js'
+export { PROTECTED_TAGS, segmentText, type Segment } from './core.js'

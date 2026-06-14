@@ -3,7 +3,7 @@
  * run of text into a sequence of plain-text and link segments, honoring the
  * "first occurrence per term, per document" rule via a shared `linked` set.
  */
-import { type HubLink, type Site } from './map';
+import { type HubLink, type Site } from './map.js';
 /** Elements/contexts we never link inside. */
 export declare const PROTECTED_TAGS: Set<string>;
 export type Segment = {

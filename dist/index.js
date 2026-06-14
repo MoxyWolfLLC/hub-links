@@ -8,5 +8,5 @@
  *   '@moxywolf/hub-links/html'    -> (none)
  *   '@moxywolf/hub-links/react'   -> html-react-parser, react
  */
-export { SITES, HUB_LINKS, hrefFor, isExternal, } from './map';
-export { PROTECTED_TAGS, segmentText } from './core';
+export { SITES, HUB_LINKS, hrefFor, isExternal, } from './map.js';
+export { PROTECTED_TAGS, segmentText } from './core.js';
