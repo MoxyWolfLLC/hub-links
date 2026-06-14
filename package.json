@@ -1,0 +1,64 @@
+{
+  "name": "@moxywolf/hub-links",
+  "version": "0.1.0",
+  "description": "Cross-property hub-and-spoke auto-linking for MoxyWolf blogs. One link map, four pipeline adapters (rehype, remark, html-string, html-react-parser).",
+  "license": "UNLICENSED",
+  "private": true,
+  "type": "module",
+  "sideEffects": false,
+  "files": ["dist"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./rehype": {
+      "types": "./dist/rehype.d.ts",
+      "import": "./dist/rehype.js"
+    },
+    "./remark": {
+      "types": "./dist/remark.d.ts",
+      "import": "./dist/remark.js"
+    },
+    "./html": {
+      "types": "./dist/html.d.ts",
+      "import": "./dist/html.js"
+    },
+    "./react": {
+      "types": "./dist/react.d.ts",
+      "import": "./dist/react.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --import tsx --test test/**/*.test.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "peerDependencies": {
+    "html-react-parser": ">=5",
+    "react": ">=18",
+    "unist-util-visit": ">=5"
+  },
+  "peerDependenciesMeta": {
+    "html-react-parser": { "optional": true },
+    "react": { "optional": true },
+    "unist-util-visit": { "optional": true }
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "html-react-parser": "^5.2.7",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "unist-util-visit": "^5.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MoxyWolfLLC/hub-links.git"
+  }
+}
