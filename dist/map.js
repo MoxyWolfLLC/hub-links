@@ -23,6 +23,11 @@ export const HUB_LINKS = [
         owner: 'stigviewer',
         path: '/methodology',
     },
+    {
+        pattern: /4-?d(?:\s+ai\s+fluency)?\s+framework/i,
+        owner: 'frontierfounder',
+        path: '/blog/eating-our-own-dogfood',
+    },
     // future pillar terms — one entry each
 ];
 /** Resolve the href for a link given the site currently rendering. */
