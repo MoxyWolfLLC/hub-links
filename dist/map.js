@@ -26,7 +26,17 @@ export const HUB_LINKS = [
     {
         pattern: /4-?d(?:\s+ai\s+fluency)?\s+framework/i,
         owner: 'frontierfounder',
-        path: '/blog/eating-our-own-dogfood',
+        path: '/series/ai-fluency-for-founders',
+    },
+    {
+        pattern: /frontier founders?/i,
+        owner: 'frontierfounder',
+        path: '/series/the-frontier-founder',
+    },
+    {
+        pattern: /polished turds?/i,
+        owner: 'frontierfounder',
+        path: '/blog/polish-bias-smb-founders',
     },
     // future pillar terms — one entry each
 ];
